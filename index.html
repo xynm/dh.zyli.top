@@ -14,6 +14,11 @@
   <script type="text/javascript" src="js/jQuery.js"></script>
   <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/slideout.css">
+  <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
+    }
+  </script>
   <script>
     var now = new Date().getTime();
     document.write('<link href="css/style.css?v=' + now + '" rel="stylesheet" type="text/css"/>');
@@ -199,10 +204,5 @@
 </body>
 <script type="text/javascript">
   document.write('<script src="js/main.js?v=' + now + '"><\/script\>');
-</script>
-<script type="text/javascript">
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js');
-  }
 </script>
 </html>
