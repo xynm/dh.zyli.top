@@ -10,6 +10,7 @@
   <link rel="stylesheet icon" href="img/icon.ico"/>
   <link rel="stylesheet" type="text/css" href="bootstrap/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="manifest" href="/manifest.json">
   <script type="text/javascript" src="js/jQuery.js"></script>
   <script type="text/javascript" src="bootstrap/bootstrap.min.js"></script>
   <link rel="stylesheet" href="css/slideout.css">
@@ -198,5 +199,12 @@
 </body>
 <script type="text/javascript">
   document.write('<script src="js/main.js?v=' + now + '"><\/script\>');
+</script>
+<script type="text/javascript">
+  if ('serviceWorker' in navigator) {
+
+    // register service worker
+    navigator.serviceWorker.register('/service-worker.js');
+  }
 </script>
 </html>
