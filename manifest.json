@@ -9,8 +9,28 @@
     "theme_color": "#ffffff",
     "icons": [
         {
-            "src": "/img/achieve/yunmeng.png",
-            "sizes": "300x300",
+            "src": "/img/icon.ico",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icon.ico",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icon.ico",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icon.ico",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/img/icon.ico",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ]

@@ -1,11 +1,10 @@
-self.addEventListener('install', function (event) {
-    console.log('[Service Worker] Installing Service Worker ...', event);
-    event.waitUntil(
-        caches.open('static').then(function (cache) {
-            cache.addAll(['/test/', '/test/index.html', '/test/manifest.json']);
-        })
-    );
-});
+self.addEventListener('install', e => {
+    e.waitUntil(
+        caches.open(cacheStorageKey)
+            .then(cache => cache.addAll(cacheList))
+            .then(() => self.skipWaiting())
+    )
+})
 self.addEventListener('activate', function (event) {
     console.log('[Service Worker] Activating Service Worker ....', event);
 });
