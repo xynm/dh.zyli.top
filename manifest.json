@@ -2,7 +2,7 @@
     "name": "简单导航",
     "short_name": "简单导航",
     "description": "一个简单的导航！",
-    "start_url": "/",
+    "start_url": "https://abc.02z.top/",
     "display": "standalone",
     "orientation": "portrait",
     "background_color": "#ffffff",
